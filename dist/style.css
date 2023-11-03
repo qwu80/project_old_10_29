@@ -1,0 +1,153 @@
+/* Resetting some default margins and paddings */
+html,
+body,
+header,
+main,
+footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* prevent scrollbars */
+  display: flex;
+  flex-direction: column;
+  /* stacks children vertically */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  cursor: url('/img/mouse_normal.png') -5 -5, auto;
+}
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+header {
+  padding: 20px;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+canvas {
+  border: 1px solid #ffffff;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+}
+.light_1 {
+  position: absolute;
+  left: 45vw;
+  top: 80vh;
+  transition: 1s;
+}
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  background-image: url('/img/bg.png');
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+.relative_2 {
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  z-index: 1;
+  top: 770px;
+  display: flex;
+  justify-content: center;
+}
+.relative_2 .new_handle {
+  margin-bottom: 30px;
+  margin-left: 387px;
+}
+.relative_2 .new_handle img {
+  height: 85px;
+  transform-origin: center bottom;
+  transform: rotate(0deg);
+}
+.relative {
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  z-index: 10;
+  top: 780px;
+  display: flex;
+  justify-content: center;
+}
+.key,
+.wave,
+.particle,
+.handle,
+.start {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  line-height: 50px;
+}
+.key:hover,
+.wave:hover,
+.particle:hover,
+.handle:hover,
+.start:hover {
+  cursor: url('/img/mouse_select.png') 16 16, auto;
+}
+.key {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-left: 90px;
+  margin-right: 3px;
+  margin-top: 24px;
+}
+.wave {
+  width: 129px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 34px;
+  margin-left: 40px;
+  left: 160px;
+}
+.particle {
+  width: 127px;
+  height: 40px;
+  margin-top: 34px;
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 270px;
+}
+.handle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  margin-left: 44px;
+}
+.start {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-left: 40px;
+  margin-top: 24px;
+}

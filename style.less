@@ -1,0 +1,217 @@
+/* Resetting some default margins and paddings */
+html, body, header, main, footer {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	// cursor: url('/img/mouse_normal.png') 16 16, auto;
+  }
+  
+  html, body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden; /* prevent scrollbars */
+	display: flex;
+	flex-direction: column; /* stacks children vertically */
+	
+  }
+
+  * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	cursor: url('/img/mouse_normal.png') -5 -5, auto;
+}
+
+body {
+	background-color: #000000;
+	color: #ffffff;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+
+	// cursor: url('/img/mouse_normal.png') 16 16, auto;
+}
+
+header {
+	padding: 20px;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+canvas {
+	border: 1px solid #ffffff;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+}
+
+.light_1 {
+    position: absolute;
+    left: 45vw;
+    top: 80vh;
+    transition: 1s;
+
+    // &:hover {
+    //     scale: 0.8;
+        
+    // }
+}
+
+#page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 1000px;
+
+	// width: 100vw;
+	background-image: url('/img/bg.png');
+    background-size: auto 100%; 
+	background-position: center center;
+	background-repeat: no-repeat;
+	flex-direction: column;
+  }
+
+
+//   .key{
+// 	  position: absolute;
+// 	  width: 100px;
+// 	  height: 100px;
+// 	  color: aqua;
+// 	  background-color: aqua;
+
+
+//   }
+
+.relative_2 {
+	position: absolute;
+	width: 100vw;
+	height: 100px;
+	z-index: 1;
+	top:770px;
+	display: flex;
+	justify-content: center; // horizontally center
+	// transition: 0.5s;
+	
+	.new_handle {
+		margin-bottom: 30px;
+		margin-left: 387px;
+		img {
+			
+				height: 85px;
+				transform-origin: center bottom;
+				transform: rotate(0deg);
+			}
+
+
+	}
+	
+
+
+}
+
+
+.relative {
+	position: absolute;
+	width: 100vw;
+	height: 100px;
+	z-index: 10;
+	top:780px;
+	display: flex;
+    justify-content: center; // horizontally center
+
+
+}
+
+
+
+
+  .key, .wave, .particle, .handle, .start {
+    // Common styles for all buttons
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    // position: absolute;
+	// top: 800px; // position them near the bottom
+	// left: 200px;
+	// text-align: center;
+
+	line-height: 50px; // vertically center the text
+	
+	&:hover {
+		cursor: url('/img/mouse_select.png') 16 16, auto;
+
+	}
+}
+
+.key {
+	width: 50px;
+    height: 50px;
+	border-radius: 50px;
+	margin-left: 90px;
+	margin-right: 3px;
+
+	margin-top: 24px;
+	
+    // background-color: #e57373; // red-ish
+
+}
+
+.wave {
+	width: 129px;
+    height: 40px;
+	border-radius: 5px;
+	
+	margin-top: 34px;
+
+	margin-left: 40px;
+	// background-color: rgba(0,0,0,0.5);
+    left: 160px; // adjust as needed
+}
+
+.particle {
+	width: 127px;
+	height: 40px;
+	margin-top: 34px;
+	border-radius: 5px;
+
+
+	margin-left: 20px;
+	background-color: rgba(0,0,0,0.4);
+
+    left: 270px; // adjust as needed
+}
+
+.handle {
+	width: 50px;
+    height: 50px;
+	border-radius: 50px;
+
+	margin-bottom: 10px;
+	margin-left: 44px;
+    // background-color: #ffb74d; // orange-ish
+ 
+}
+
+.start {
+	width: 50px;
+    height: 50px;
+	border-radius: 50px;
+	margin-left: 40px;
+
+	margin-top: 24px;
+
+    // background-color: #ba68c8; // purple-ish
+
+}
